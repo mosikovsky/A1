@@ -80,12 +80,18 @@ footer {
   background-color: #bbc1d1;
 }
 .navbar {
-  background-color: #bbc1d1 !important;
+  background-color: transparent !important;
+}
+
+.btn-primary {
+ background-color: #1c2f67 !important; 
+ border-radius: 2px !important;
+ padding: 10px 32px 10px 32px !important;
 }
 
 /* BACKGROUND */
 .bg-primary {
-  background-color: #1c2f67 !important;
+  background-color: #1c2f67 !important; 
 }
 
 .bg-secondary {
@@ -126,6 +132,8 @@ ul {
   list-style-type: none;
 }
 
+
+
 .font-weight-bold {
   font-family: HelveticaNeueLTProBlk !important;
   src: url("../font/HelveticaNeueLTProBlk.woff") !important;
@@ -160,6 +168,12 @@ ul {
   background-position: 56px 29px !important;
 }
 
+.icon-vertical-line {
+  background-repeat: no-repeat !important;
+  background-image: url("../icons/vertical-line.svg") !important;
+  background-position: center !important;
+}
+
 /* IMGS*/
 .bg-nature {
   background-repeat: no-repeat !important;
@@ -182,7 +196,6 @@ ul {
 .bg-eshop {
   background-repeat: no-repeat !important;
   background-image: url("../img/eshop.png") !important;
-  background-position: center !important;
 }
 
 .title-bg {
@@ -203,6 +216,54 @@ ul {
   font-size: 28px;
   line-height: 32px;
 }
+
+.searchbar{
+  margin-top: 2%;
+  height: 60px;
+  background-color: #1c2f67;
+  border-radius: 4px;
+  padding: 10px !important;
+  position: relative;
+  margin-top: -1.7%;
+  }
+
+
+  .search_input{
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  line-height: 40px;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 200px;
+  transition: width 0.4s linear;
+  }
+
+  
+
+  .searchbar:hover > .search_icon{
+  background: #ffffff;
+  color: #1c2f67;
+  }
+
+  .search_icon{
+  height: 40px;
+  width: 40px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+  color:#ffffff;
+  text-decoration: none;
+  }
+
+
 
 @media screen and (min-width: 720px) {
   .title-bg {
