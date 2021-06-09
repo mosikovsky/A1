@@ -62,6 +62,16 @@
     url("HelveticaNeueLTProBdCnO.woff") format("woff");
 }
 
+/* CUSTOM CLASS */
+.line {
+  height: 1px;
+  box-shadow: 0px 1px 0px 0px #8a92b7;
+  width: 100%;
+  width: 100%;
+  border-top: 1px solid #e8eaf0;
+  border-bottom: 1px solid #e8eaf0;
+}
+
 body {
   background-color: #f4f7fc;
 }
@@ -73,12 +83,7 @@ footer {
   background-color: #bbc1d1 !important;
 }
 
-.login-icon {
-  background-repeat: no-repeat !important;
-  background-image: url("icons/person-circle.svg") !important;
-  background-position: 12px center !important;
-}
-
+/* BACKGROUND */
 .bg-primary {
   background-color: #1c2f67 !important;
 }
@@ -91,12 +96,7 @@ footer {
   background-color: #0c23618f !important;
 }
 
-.bg-klima {
-  background-repeat: no-repeat !important;
-  background-image: url("../icons/card-example.png") !important;
-  background-position: center !important;
-}
-
+/* TEXTS */
 .text-primary {
   color: #1c2f67 !important;
 }
@@ -135,22 +135,61 @@ ul {
   font-family: Helvetica;
 }
 
+/* ICONS */
 .icon-arrow-right {
   background-repeat: no-repeat !important;
   background-image: url("../icons/arrow-right.svg") !important;
   background-position: center !important;
 }
 
-.icon-mini-pre {
+.icon-facebook {
   background-repeat: no-repeat !important;
-  background-image: url("../icons/mini-pre.svg") !important;
+  background-image: url("../icons/facebook.svg") !important;
   background-position: 56px 29px !important;
 }
 
-.title-bg {
-  background-image: none!important;
+.icon-youtube {
+  background-repeat: no-repeat !important;
+  background-image: url("../icons/youtube.svg") !important;
+  background-position: 56px 29px !important;
 }
 
+.icon-linkedin {
+  background-repeat: no-repeat !important;
+  background-image: url("../icons/linkedin.svg") !important;
+  background-position: 56px 29px !important;
+}
+
+/* IMGS*/
+.bg-nature {
+  background-repeat: no-repeat !important;
+  background-image: url("../img/nature.png") !important;
+  background-position: center !important;
+}
+
+.bg-klima {
+  background-repeat: no-repeat !important;
+  background-image: url("../img/klima.png") !important;
+  background-position: center !important;
+}
+
+.bg-ecar {
+  background-repeat: no-repeat !important;
+  background-image: url("../img/ecar.png") !important;
+  background-position: center !important;
+}
+
+.bg-eshop {
+  background-repeat: no-repeat !important;
+  background-image: url("../img/eshop.png") !important;
+  background-position: center !important;
+}
+
+.title-bg {
+  background-image: none !important;
+}
+
+/* HEADINGS */
 .h1 {
   font-style: normal;
   font-weight: normal;
@@ -159,7 +198,6 @@ ul {
 }
 
 .h2 {
-  font-family: SF Pro Display;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -169,7 +207,7 @@ ul {
 @media screen and (min-width: 720px) {
   .title-bg {
     background-repeat: no-repeat !important;
-    background-image: url("../icons/main-img.png") !important;
+    background-image: url("../img/main-img.png") !important;
     background-position: right center !important;
     height: 500px;
   }
