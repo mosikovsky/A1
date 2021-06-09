@@ -217,6 +217,14 @@ ul {
   line-height: 32px;
 }
 
+.h4 {
+  font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: -0.315px;
+text-transform: uppercase;
+}
+
 .searchbar{
   margin-top: 2%;
   height: 60px;
@@ -261,6 +269,13 @@ ul {
   border-radius: 2%;
   color:#ffffff;
   text-decoration: none;
+  }
+
+  /* footer */
+
+  .accordion-button:focus {
+    background-color: #1c2f67!important;
+    color: #1c2f67!important;
   }
 
 
