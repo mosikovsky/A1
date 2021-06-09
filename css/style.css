@@ -64,12 +64,8 @@
 
 /* CUSTOM CLASS */
 .line {
-  height: 1px;
-  box-shadow: 0px 1px 0px 0px #8a92b7;
-  width: 100%;
-  width: 100%;
-  border-top: 1px solid #e8eaf0;
-  border-bottom: 1px solid #e8eaf0;
+  border-top: 1px solid #8993b0;
+  border-bottom: 1px solid #8993b0;
 }
 
 body {
@@ -178,24 +174,25 @@ ul {
 .bg-nature {
   background-repeat: no-repeat !important;
   background-image: url("../img/nature.png") !important;
-  background-position: center !important;
+  background-size: cover !important;
 }
 
 .bg-klima {
   background-repeat: no-repeat !important;
   background-image: url("../img/klima.png") !important;
-  background-position: center !important;
+  background-size: cover !important;
 }
 
 .bg-ecar {
   background-repeat: no-repeat !important;
   background-image: url("../img/ecar.png") !important;
-  background-position: center !important;
+  background-size: cover !important;
 }
 
 .bg-eshop {
   background-repeat: no-repeat !important;
   background-image: url("../img/eshop.png") !important;
+  background-size: cover !important;
 }
 
 .title-bg {
