@@ -80,7 +80,7 @@ footer {
   background-color: #bbc1d1;
 }
 .navbar {
-  background-color: transparent !important;
+  background-color: #bbc1d1; !important;
 }
 
 .btn-primary {
