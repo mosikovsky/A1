@@ -1,43 +1,116 @@
-"nav" {
-    "navEnergy": "Elektřina",
-    "navGas": "Plyn",
-    "navServices": "Služby",
-    "navNeeds": "Potřebuji uařídit",
-    "navContacts": "Kontakty",
-    "navLoginBtn": "Přihlásit",
-}
+{
+  "nav": { ​​​​​​​
+  "energy": "Elektřina",
+  "gas": "Plyn",
+  "services": "Služby",
+  "needs": "Potřebuji zařídit",
+  "constacts": "Kontakty",
+  "loginBtn": "Přihlásit",
+  "language": "EN"
+},
 
-"searchBar" {
-    "searchPlaceholder": "Napište co hledáte",
-    "searchBarDescription": "Zkuste například vyúčtování, nebo formuláře ke stažení... :)"
-}
+"searchBar": {
+  "placeholder": "Napište co hledáte",
+  "description": "Zkuste například vyúčtování, nebo formuláře ke stažení... :)"
+}​,
 
-"mainHeading" {
-    "mainHeadingBlue": "Postaráme se o Vaší ",
-}
+"mainHeading": {
+  "wewillTakeCareOfYour": "Postaráme se o Vaší ",
+    "electricity": "elektřinu",
+    "blueComma": ", ",
+    "gas":"plyn ",
+    "electromobility": "elektromobilitu ",
+    "or":"či ",
+    "air conditioning": "klimatizaci",
+    "blueDot":"."
+},
 
-"mainInterestedIn": "Mám zájem",
+"mainInterested": "Mám zájem",
 "branchesText": "Pobočky jsou nejméně vytížené mezi 9:00 až 11:00",
-"nearestBranch": "Najít nejbližší pobočku",
-"ourServicesHeading": "Naše služby",
-"findMoreLink": "Zjisti více",
+"nearestBranch": "Find the nearest branch",
+"ourServicesHeading": "Our services",
 
-"tileNature" {
-  "headingNature": "Příroda na prvním místě",
-  "subHeadingNature": "V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.",
-}
+"findMoreLink": "Find out more",
 
-"tileClima" {
-    "headingClima": "Příroda na prvním místě",
-    "subHeadingClima": "V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.",
-}
+"tile": {
+  "nature": {
+    "heading": "Příroda na prvním místě",
+    "subHeading": "V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text."
+  },
+  "clima": {
+    "heading": "Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila",
+    "subHeading": "Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila"
+  },
+  "ecar": {
+    "heading": "Vlastníte elektromobil?",
+    "subheading": "Karta na nabijení na našich stanicích už od 200 Kč/měsíc"
+  },
+  "eshop": {
+    "heading": "Eshop",
+    "subheading": "Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila"
+  }
+},
 
-"tileNature" {
-    "headingNature": "Příroda na prvním místě",
-    "subHeadingNature": "V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.",
-}
-  
-"tileNature" {
-    "headingNature": "Příroda na prvním místě",
-    "subHeadingNature": "V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.",
+"infoLine": "Infolinka 24/7:",
+"redNummber": "800 550 055",
+"email": "Email:",
+"emailAdress": "pre@pre.cz",
+"listBranches": "Seznam poboček",
+"followPre": "Sledujte PRE:",
+
+"multiElectricity": {
+  "heading": "ELEKTŘINA",
+  "garant": "Garant",
+  "clasic": "Klasik",
+  "ecostream": "PREecoproud",
+  "productOverview": "Přehled produktů"
+},
+"multiGas": {
+  "heading": "PLYN",
+  "gasFixPlus": "PRE plyn fix plus",
+  "gasClasic": "PRE plyn klasik",
+  "productOverview": "Přehled produktů"
+},
+"multiServices": {
+  "heading": "SLUŽBY",
+  "fve": "FVE",
+  "wallBoxes": "Wall Boxes",
+  "airCond": "Klimatizace",
+  "gasBoilers": "Plynové kotle",
+  "heatPumps": "Tepelná čerpadla"
+},
+"documents": {
+  "heading": "POTŘEBUJI ZAŘÍDIT",
+  "documents": "Dokumenty",
+  "goReturn": "Chete přejít / vrátit se k PRE",
+  "invoiceExp": "Vysvětlení faktury",
+  "invoicePay": "Jak zaplatit fakturu",
+  "recivables": "Řešení pohledávek",
+  "overpay": "Přeplatek ze záloh",
+  "subConnection": "Připojení odběru",
+  "failReport": "Hlášení poruchy"
+},
+"company": {
+  "heading": "SPOLEČNOST",
+  "contacts": "Kontakty",
+  "pressCenter": "Tiskové centrum",
+  "customerService": "Zákaznické linka",
+  "contactUs": "Kontaktujte nás",
+  "customerCentrum": "Zákaznické centrum",
+  "contactAdresses": "Kontaktní adresy",
+  "recivablesReminders": "Pohledávky/upomínky",
+  "bankConnection": "Bankovní spojení",
+  "career": "Kariéra"
+},
+"linksFooter": {
+  "cookies": "Cookies",
+  "copyright": "Copyright",
+  "billingInfo": "Fakturační údaje",
+  "accessibility": "Přístupnost",
+  "terms": "Podmínky použití webu",
+  "conditions": "Obchodní podmínky"
+},
+
+"copyright": "@Vyrobeno s pořádnou dávkou energie 2014-2021 Pražská energetika,a.s."
+
 }

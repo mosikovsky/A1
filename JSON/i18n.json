@@ -1,3 +1,4 @@
+{
 "nav": {
   ​​​​​​​
   "energy": "Electricity",
@@ -15,7 +16,14 @@
 }​,
 
 "mainHeading": {
-  ""
+  "wewillTakeCareOfYour": "We will take care of your ",
+    "electricity": "electricity",
+    "blueComma": ", ",
+    "gas":"gas ",
+    "electromobility": "electromobility ",
+    "or":"or",
+    "air conditioning": "air conditioning",
+    "blueDot":"."
 },
 
 "mainInterested": "I am interested in",
@@ -36,12 +44,12 @@
   },
   "ecar": {
     "heading": "Do you own an electric car?",
-    "subheading": "Card for charging at our stations from CZK 200 / month",
+    "subheading": "Card for charging at our stations from CZK 200 / month"
   },
   "eshop": {
     "heading": "Eshop",
-    "subheading": "High summer temperatures? Nothing our air conditioning can't handle",
-  },
+    "subheading": "High summer temperatures? Nothing our air conditioning can't handle"
+  }
 },
 
 "infoLine": "Infoline 24/7:",
@@ -52,46 +60,56 @@
 "followPre": "Follow PRE:",
 
 "multiElectricity": {
+  "heading": "ELETRICITY",
+  "garant": "Garant",
   "clasic": "Clasic",
   "ecostream": "PREecostream",
-  "productOverview": "Product overview",
-}
+  "productOverview": "Product overview"
+},
 "multiGas": {
-  "clasic": "Clasic",
-  "ecostream": "PREecostream",
-  "productOverview": "Product overview",
-}
+  "heading": "GAS",
+  "gasFixPlus": "PRE gas fix plus",
+  "gasClasic": "PRE gas clasic",
+  "productOverview": "Product overview"
+},
 "multiServices": {
+  "heading": "SERVICES",
   "wallBoxes": "Wallboxes",
   "airCond": "Air conditioning",
   "gasBoilers": "Gas boilers",
-  "heatPumps": "Heat pumps",
-}
+  "heatPumps": "Heat pumps"
+},
 "documents": {
+  "heading": "NEEDS",
   "documents": "Documents",
-  "goReturn": "You want to go to / return to PR",
+  "goReturn": "You want to go to/return to PRE",
   "invoiceExp": "Invoice explanation",
   "invoicePay": "How to pay an invoice",
   "recivables": "Settlement of receivables",
   "overpay": "Overpayment from advances",
   "subConnection": "Subscription connection",
-  "invoicePay": "How to pay an invoice",
   "failReport": "Report failure"
 },
 "company": {
+  "heading": "COMPANY",
   "contacts": "Contacts",
   "pressCenter": "Press center",
   "customerService": "Customer service",
   "contactUs": "Contact us",
   "customerCentrum": "Customer centre",
   "contactAdresses": "Contact addresses",
-  "recivablesReminders": "Receivables / reminders",
+  "recivablesReminders": "Receivables/reminders",
   "bankConnection": "Bank connection",
-  "career": "Career",
-}
+  "career": "Career"
+},
 "linksFooter": {
-"billingInfo": "Billing information",
-"accessibility": "Accessibility",
-"terms": "Terms of use of the website",
-"conditions": "Business conditions"
+  "cookies": "Cookies",
+  "copyright": "Copyright",
+  "billingInfo": "Billing information",
+  "accessibility": "Accessibility",
+  "terms": "Terms of use of the website",
+  "conditions": "Business conditions"
+},
+
+"copyright": "@Made with lot of energy 2014-2021 Pražská energetika,a.s."
 }
