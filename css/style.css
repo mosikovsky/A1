@@ -237,6 +237,10 @@ color: #1c2f67;
   border-bottom: 1px solid #8993b0;
   padding: 1rem 0;
 }
+
+.line-t {
+  border-top: 1px solid #8993b0;
+}
 /* tile-responsive base */
 
 .tile-responsive {
