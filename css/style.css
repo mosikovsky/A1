@@ -246,6 +246,13 @@ color: #1c2f67;
   cursor: pointer;
 }
 
+.copyright {
+  padding: 1rem 0;
+}
+
+.copyright p {
+  margin: 0;
+}
 /* tile-responsive variants for random grid */
 
 .col-3 .tile-responsive .h2,

@@ -23,9 +23,10 @@
 </head>
 
 <body>
+  <!-- navbar version 1.0 -->
   <nav class="navbar navbar-expand-lg navbar-light light-blue-bg fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="icons/logo.svg" /></a>
+      <a class="navbar-brand" href="#"><img src="icons/logo.svg" alt="logo PRE" /></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,12 +70,12 @@
             </button>
           </div>
         </div>
-
       </div>
     </div>
   </nav>
+  <!-- endif navbar version 1.0 -->
 
-  <!-- searchbar -->
+  <!-- searchbar version 1.0 -->
   <div class="modal fade" id="searchbar" tabindex="-1" aria-labelledby="searchbar" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content bg-fusion-900">
@@ -85,22 +86,23 @@
         <div class="modal-body">
           <div class="card card-body card-transparent card-borderless mt-5">
             <div class="form-floating">
-              <input type="text" class="form-control form-control-xxl" id="searchbar" placeholder="Napište co hledáte">
-              <label for="searchbar">Napište co hledáte</label>
+              <input type="text" class="form-control form-control-xxl" id="searchbarInput"
+                placeholder="Napište co hledáte">
+              <label for="searchbarInput">Napište co hledáte</label>
             </div>
             <p class="text-right text-white mt-3">Zkuste například vyúčtování, nebo formuláře ke stažení... :)</p>
-
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- endif searchbar -->
+  <!-- endif searchbar version 1.0 -->
 
   <div class="container-fluid pt-5 mt-5 p-0">
     <main class="p-3 p-md-5">
       <div class="row">
         <div class="col-12">
+          <!-- old compomnent - for refactor to BS5! -->
           <div class="title-bg">
             <div class="row">
               <div class="col-12 col-md-8">
@@ -111,243 +113,268 @@
               </div>
             </div>
           </div>
+          <!-- old compomnent - for refactor to BS5! -->
         </div>
 
         <div class="col-12">
+          <!-- old compomnent - for refactor to BS5! -->
           <div class="bg-secondary mt-5">
             <div class="d-inline-flex align-items-center">
-              <p class="text-primary m-3">Pobočky jsou nejméně vytířené mezi 9:00 až 11:00 </p>
-              <a href="#" class="text-primary text-decoration-underline">Najít nejbliší pobočku</a>
+              <p class="text-primary m-3">Pobočky jsou nejméně vytížené mezi 9:00 až 11:00 </p>
+              <a href="#" class="text-primary text-decoration-underline">Najít nejbližší pobočku</a>
             </div>
           </div>
+          <!-- old compomnent - for refactor to BS5! -->
         </div>
       </div>
     </main>
 
     <div class="p-3 p-md-5">
       <!-- our services -->
-      <section>
-        <div class="row">
-          <div class="d-grid gap-4">
-
-            <div class="col-12">
-              <h2 class="h2">Naše služby</h2>
-            </div>
-
-            <div class="row">
-              <div class="col-12 col-lg-9">
-                <div class="bg-transparent bg-nature tile-responsive">
-                  <div class="card-transparent card justify-content-center h-100">
-                    <h3 class="h2 text-secondary">Příroda na prvním místě</h3>
-                    <p class="text-secondary">
-                      V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.
-                    </p>
-                    <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-3">
-                <div class="bg-clima bg-transparent tile-responsive">
-                  <div class="card-transparent card justify-content-center h-100">
-                    <h3 class="h2 text-secondary">Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila</h3>
-                    <p class="text-secondary">
-                      Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
-                    </p>
-                    <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-
-              <div class="col-4">
-                <div class="bg-ecar bg-transparent tile-responsive">
-                  <div class="card-transparent card justify-content-center h-100">
-                    <h3 class="h2 text-secondary">Vlastníte elektromobil</h3>
-                    <p class="text-secondary">
-                      Karta na nabijení na našich stanicích už od 200 Kč/měsíc
-                    </p>
-                    <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-8">
-                <div class="bg-eshop bg-transparent tile-responsive">
-                  <div class="card-transparent card justify-content-center h-100">
-                    <h3 class="h2 text-secondary">Eshop</h3>
-                    <p class="text-secondary">
-                      Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
-                    </p>
-                    <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-12">
-            <div class="p-3 mt-5">
-              <div class="row m-auto">
-                <div class="col-6 col-md">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">PRE distribuce</p>
-                  </div>
-                </div>
-                <div class="col-6 col-md">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">PRE měření</p>
-                  </div>
-                </div>
-                <div class="col-6 col-md">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">PRE zákaznická</p>
-                  </div>
-                </div>
-                <div class="col-6 col-md">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">PRE servisní</p>
-                  </div>
-                </div>
-                <div class="col-6 col-md">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">KORMAK</p>
-                  </div>
-                </div>
-                <div class="col-6 col-md">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">VOLTCOM</p>
-                  </div>
-                </div>
-                <div class="col-6 col-md">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">Yello</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="bg-secondary p-3 mt-5">
-              <div class="row m-auto">
-                <div class="col-12 col-md-6 col-lg m-auto">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">infolinka: <span class="text-alert fw-bold"> 800 550 055</span>
-                      (Volejte
-                      NONSTOP)</p>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg m-auto">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">Email: <span class="text-alert fw-bold"> pre@pre.cz</span></p>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg m-auto">
-                  <div class="text-center mb-3 mb-lg-0">
-                    <a href="#" class="text-primary fw-bold text-decoration-underline">Seznam poboček</a>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg m-auto">
-                  <div class="text-center">
-                    <p class="text-primary m-lg-0">Sledujte PRE:
-                      <a class="btn"><img src="icons/facebook.svg" alt="odkaz na facebookovu stránku PRE"></a>
-                      <a class="btn"><img src="icons/youtube.svg" alt="odkaz na youtube stránku PRE"></a>
-                      <a class="btn"><img src="icons/linkedin.svg" alt="odkaz na linkedin společnosti PRE"></a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <footer class="w-100 bg-primary mt-5 ps-3 pe-3 pt-3 ps-md-5 pe-md-5 pt-md-5 footer">
       <div class="row">
-        <div class="col-12">
-          <div class="pb-5"><img src="icons/mini-pre.svg" alt="malé logo PRE"></div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3">
+        <div class="d-grid gap-4">
+
+          <div class="col-12">
+            <h2 class="h2">Naše služby</h2>
+          </div>
+
+          <div class="col-12">
+            <!-- tile compomponent version 1.0 for BS5! -->
+            <div class="bg-transparent bg-nature tile-responsive">
+              <div class="card-transparent card justify-content-center h-100">
+                <h3 class="h2 text-secondary">Příroda na prvním místě</h3>
+                <p class="text-secondary">
+                  V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.
+                </p>
+                <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+              </div>
+            </div>
+            <!-- endif tile compomponent version 1.0 for BS5! -->
+          </div>
+
+          <div class="col-12">
+            <!-- tile compomponent version 1.0 for BS5! -->
+            <div class="bg-clima bg-transparent tile-responsive">
+              <div class="card-transparent card justify-content-center h-100">
+                <h3 class="h2 text-secondary">Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila</h3>
+                <p class="text-secondary">
+                  Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
+                </p>
+                <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+              </div>
+            </div>
+            <!-- endif tile compomponent version 1.0 for BS5! -->
+          </div>
+
+          <div class="col-12">
+            <!-- tile compomponent version 1.0 for BS5! -->
+            <div class="bg-ecar bg-transparent tile-responsive">
+              <div class="card-transparent card justify-content-center h-100">
+                <h3 class="h2 text-secondary">Vlastníte elektromobil</h3>
+                <p class="text-secondary">
+                  Karta na nabijení na našich stanicích už od 200 Kč/měsíc
+                </p>
+                <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+              </div>
+            </div>
+            <!-- endif tile compomponent version 1.0 for BS5! -->
+          </div>
+
+          <div class="col-12">
+            <!-- tile compomponent version 1.0 for BS5! -->
+            <div class="bg-eshop bg-transparent tile-responsive">
+              <div class="card-transparent card justify-content-center h-100">
+                <h3 class="h2 text-secondary">Eshop</h3>
+                <p class="text-secondary">
+                  Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
+                </p>
+                <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+              </div>
+            </div>
+            <!-- endif tile compomponent version 1.0 for BS5! -->
+          </div>
+
+          <!-- prakticka ukazka chovani tile-responsive podle gridu
           <div class="row">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-6 col-md-12">
-                  <img src="icons/logo-noedges.png" alt="logo PRE" />
+            <div class="col-12 col-lg-9">
+              <div class="bg-transparent bg-nature tile-responsive">
+                <div class="card-transparent card justify-content-center h-100">
+                  <h3 class="h2 text-secondary">Příroda na prvním místě</h3>
+                  <p class="text-secondary">
+                    V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
                 </div>
-                <div class="col-6 col-md-12">
-                  <p class="text-light m-0">Pražská energetika, a. s.</p>
-                  <p class="text-light m-0">Na Hroudě 1492/4</p>
-                  <p class="text-light">100 05 Praha 10</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+              <div class="bg-clima bg-transparent tile-responsive">
+                <div class="card-transparent card justify-content-center h-100">
+                  <h3 class="h2 text-secondary">Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila</h3>
+                  <p class="text-secondary">
+                    Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-8 d-none d-md-block">
+
           <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
-              <h4 class="h4">ELEKTŘINA</h4>
-              <ul class="p-0">
-                <li class="text-secondary">FVE</li>
-                <li class="text-secondary">Klimatizace</li>
-                <li class="text-secondary">Wall Boxy</li>
-                <li class="text-secondary">Plynové kotle</li>
-                <li class="text-secondary">Tepelná čerpadla</li>
-              </ul>
+
+            <div class="col-4">
+              <div class="bg-ecar bg-transparent tile-responsive">
+                <div class="card-transparent card justify-content-center h-100">
+                  <h3 class="h2 text-secondary">Vlastníte elektromobil</h3>
+                  <p class="text-secondary">
+                    Karta na nabijení na našich stanicích už od 200 Kč/měsíc
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <h3 class="h4">SLUŽBY</h4>
-                <ul class="p-0">
+
+            <div class="col-8">
+              <div class="bg-eshop bg-transparent tile-responsive">
+                <div class="card-transparent card justify-content-center h-100">
+                  <h3 class="h2 text-secondary">Eshop</h3>
+                  <p class="text-secondary">
+                    Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+                </div>
+              </div>
+            </div>
+             endif prakticka ukazka chovani tile-responsive podle gridu -->
+
+          <!-- logo list component / responsive part underconstruction for BS5! -->
+          <ul class="list-inline d-flex align-content-center flex-wrap justify-content-between">
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz PRE distibuce" /></a></li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz PRE měření" /></a></li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz PRE zákaznická" /></a>
+            </li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz Pre servisní" /></a></li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz KORMAK" /></a></li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz VOLTCOM" /></a></li>
+          </ul>
+          <!-- endif logo list -->
+
+        </div>
+      </div>
+
+      <!-- info compomponent underconstruction for BS5! -->
+      <div class="bg-secondary card-body d-flex flex-wrap align-items-center justify-content-between">
+        <span class="text-primary">infolinka 24/7: <span class="text-alert fw-bold"> 800 550 055</span></span>
+        <span class="text-primary">Email: <span class="text-alert fw-bold"> pre@pre.cz</span></span>
+        <a href="#" class="text-primary fw-bold text-decoration-underline">Seznam poboček</a>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">Sledujte PRE:</li>
+          <li class="list-inline-item"><a class="btn"><img src="icons/facebook.svg" alt="odkaz na facebookovu stránku PRE"></a></li>
+          <li class="list-inline-item"><a class="btn"><img src="icons/youtube.svg" alt="odkaz na youtube stránku PRE"></a></li>
+          <li class="list-inline-item"><a class="btn"><img src="icons/linkedin.svg" alt="odkaz na linkedin společnosti PRE"></a></li>
+        </ul>
+      </div>
+      <!-- endif info compomponent underconstruction for BS5! -->
+  </div>
+    <!-- footer compomponent underconstruction for BS5! -->
+    <footer class="bg-primary p-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- footer breadcrumb component - testing in progress! -->
+            <ul class="float-start list-unstyled pt-3">
+              <li>
+                <a href=""><img src="icons/mini-pre.svg" alt="malé logo PRE"></a>
+              </li>
+            </ul>
+            <!-- endif footer breadcrumb component - testing in progress! -->
+          </div>
+
+          <!-- multilist compomponent underconstruction for BS5! -->
+          <div class="d-none d-md-block">
+            <ul class="list-inline flex-wrap flex-row d-flex w-100">
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="list-unstyled">
+                  <li class="mb-4"><img src="icons/logo-noedges.png" alt="logo PRE" /></li>
+                  <li class="text-secondary">Pražská energetika, a. s.</li>
+                  <li class="text-secondary">Na Hroudě 1492/4</li>
+                  <li class="text-secondary">100 05 Praha 10</li>
+                </ul>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4">ELEKTŘINA</h4>
+                  </li>
                   <li class="text-secondary">FVE</li>
                   <li class="text-secondary">Klimatizace</li>
                   <li class="text-secondary">Wall Boxy</li>
                   <li class="text-secondary">Plynové kotle</li>
                   <li class="text-secondary">Tepelná čerpadla</li>
                 </ul>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <h4 class="h4">PLYN</h4>
-              <ul class="p-0">
-                <li class="text-secondary">FVE</li>
-                <li class="text-secondary">Klimatizace</li>
-                <li class="text-secondary">Wall Boxy</li>
-                <li class="text-secondary">Plynové kotle</li>
-                <li class="text-secondary">Tepelná čerpadla</li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <h4 class="h4">POTŘEBUJI ZAŘÍDIT</h4>
-              <ul class="p-0">
-                <li class="text-secondary">FVE</li>
-                <li class="text-secondary">Klimatizace</li>
-                <li class="text-secondary">Wall Boxy</li>
-                <li class="text-secondary">Plynové kotle</li>
-                <li class="text-secondary">Tepelná čerpadla</li>
-                <li class="text-secondary">Wall Boxy</li>
-                <li class="text-secondary">Plynové kotle</li>
-                <li class="text-secondary">Tepelná čerpadla</li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <h4 class="h4">SPOLEČNOST</h4>
-              <ul class="p-0">
-                <li class="text-secondary">FVE</li>
-                <li class="text-secondary">Klimatizace</li>
-                <li class="text-secondary">Wall Boxy</li>
-                <li class="text-secondary">Plynové kotle</li>
-                <li class="text-secondary">Tepelná čerpadla</li>
-                <li class="text-secondary">Wall Boxy</li>
-                <li class="text-secondary">Plynové kotle</li>
-                <li class="text-secondary">Tepelná čerpadla</li>
-                <li class="text-secondary">Tepelná čerpadla</li>
-              </ul>
-            </div>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4">ELEKTŘINA</h4>
+                  </li>
+                  <li class="text-secondary">FVE</li>
+                  <li class="text-secondary">Klimatizace</li>
+                  <li class="text-secondary">Wall Boxy</li>
+                  <li class="text-secondary">Plynové kotle</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                </ul>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4">POTŘEBUJI ZAŘÍDIT</h4>
+                  </li>
+                  <li class="text-secondary">Klimatizace</li>
+                  <li class="text-secondary">Wall Boxy</li>
+                  <li class="text-secondary">Plynové kotle</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                  <li class="text-secondary">Wall Boxy</li>
+                  <li class="text-secondary">Plynové kotle</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                </ul>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4">ELEKTŘINA</h4>
+                  </li>
+                  <li class="text-secondary">Klimatizace</li>
+                  <li class="text-secondary">Wall Boxy</li>
+                  <li class="text-secondary">Plynové kotle</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                  <li class="text-secondary">Wall Boxy</li>
+                  <li class="text-secondary">Plynové kotle</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                </ul>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4">ELEKTŘINA</h4>
+                  </li>
+                  <li class="text-secondary">Klimatizace</li>
+                  <li class="text-secondary">Wall Boxy</li>
+                  <li class="text-secondary">Plynové kotle</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                  <li class="text-secondary">Wall Boxy</li>
+                  <li class="text-secondary">Plynové kotle</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="col-12">
+          <!-- endif multilist compomponent underconstruction for BS5! -->
+
+          <!-- accordion component - testing in progress! -->
           <div class="accordion d-block d-md-none" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -457,36 +484,33 @@
               </div>
             </div>
           </div>
+          <!-- endif accordion component - testing in progress! -->
+
+          <!-- footer nav component underconstruction for BS5! -->
+          <div class="line">
+            <div class="d-flex flex-row justify-content-between">
+              <div><a href="" class="btn btn-link btn-sm text-white">Cookies</a></div>
+              <div><a href="" class=" btn btn-link btn-sm text-white">Copyright</a></div>
+              <div><a href="" class="btn btn-link btn-sm text-white">Fakturační údaje</a></div>
+              <div><a href="" class=" btn btn-link btn-sm text-white">Přístupnost</a></div>
+              <div><a href="" class=" btn btn-link btn-sm text-white">Podmínky použití webu</a></div>
+              <div><a href="" class="btn btn-link btn-sm text-white">Obchodní podmínky</a></div>
+            </div>
+          </div>
+          <!-- endif footer nav component underconstruction for BS5! -->
+
+          <!-- copyright component ver. 1.0 -->
+          <div class="copyright text-center text-lg-start">
+            <p class="text-secondary">
+              <small>@Vyrobeno s pořádnou dávkou energie 2014-2021 Pražská energetika,a.s.</small>
+            </p>
+          </div>
+          <!-- endif copyright component ver. 1.0 -->
         </div>
       </div>
-
-      <!-- footer nav component underconstruction for BS5! -->
-      <div class="line">
-        <div class="d-flex flex-row justify-content-between">
-          <div><a href="" class="btn btn-link btn-sm text-white">Cookies</a></div>
-          <div><a href="" class=" btn btn-link btn-sm text-white">Copyright</a></div>
-          <div><a href="" class="btn btn-link btn-sm text-white">Fakturační údaje</a></div>
-          <div><a href="" class=" btn btn-link btn-sm text-white">Přístupnost</a></div>
-          <div><a href="" class=" btn btn-link btn-sm text-white">Podmínky použití webu</a></div>
-          <div><a href="" class="btn btn-link btn-sm text-white">Obchodní podmínky</a></div>
-        </div>
-      </div>
-
-      <!-- endif footer nav component underconstruction for BS5! -->
-
-      <div class="text-center text-lg-start">
-        <div class="footer-site-logo"></div>
-        <div class="copyright">
-          <p class="m-3 text-secondary">
-            <small>@Vyrobeno s pořádnou dávkou energie 2014-2021 Pražská energetika,a.s.</small>
-          </p>
-        </div>
-      </div>
-
-  </div>
-  </footer>
-  </div>
-  <script src="js/script.js"></script>
+    </footer>
+    <!-- endif footer compomponent underconstruction for BS5! -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
