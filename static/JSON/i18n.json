@@ -1,5 +1,4 @@
 "nav": {
-  ​​​​​​​
   "energy": "Electricity",
   "gas": "Gas",
   "services": "Services",
@@ -12,7 +11,7 @@
 "searchBar": {
   "placeholder": "Write what you are looking for",
   "description": "For example, try billing or downloadable forms ... :)"
-}​,
+},
 
 "mainHeading": {
   ""

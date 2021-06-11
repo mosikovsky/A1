@@ -11,19 +11,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Elektřina</a>
+          <a class="nav-link" href="#">{{ 'nav.energy' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Plyn</a>
+          <a class="nav-link" href="#">{{ 'nav.gas' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">služby</a>
+          <a class="nav-link" href="#">{{ 'nav.services' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Potřebuji zařídit</a>
+          <a class="nav-link" href="#">{{ 'nav.needs' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kontakty</a>
+          <a class="nav-link" href="#">{{ 'nav.contacts' | translate }}</a>
         </li>
       </ul>
 
@@ -41,10 +41,10 @@
                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
               </path>
             </svg>
-            Přihlásit
+            {{ 'nav.loginBtn' | translate }}
           </button>
           <li class="nav-item">
-            <a class="nav-link" href="#">EN</a>
+            <button class="nav-link" (click)="setLanguage($event)">{{ 'nav.language' | translate }}</button>
           </li>
         </div>
       </div>

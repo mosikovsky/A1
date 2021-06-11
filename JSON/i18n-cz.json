@@ -1,5 +1,5 @@
 {
-  "nav": { ​​​​​​​
+  "nav": {
   "energy": "Elektřina",
   "gas": "Plyn",
   "services": "Služby",
@@ -12,7 +12,7 @@
 "searchBar": {
   "placeholder": "Napište co hledáte",
   "description": "Zkuste například vyúčtování, nebo formuláře ke stažení... :)"
-}​,
+},
 
 "mainHeading": {
   "wewillTakeCareOfYour": "Postaráme se o Vaší ",
@@ -112,5 +112,3 @@
 },
 
 "copyright": "@Vyrobeno s pořádnou dávkou energie 2014-2021 Pražská energetika,a.s."
-
-}
