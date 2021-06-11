@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A1</title>
+
+  <!-- jquery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="js/jquery.js"></script> -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- ok -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+  <!-- hotovo -->
+  <!-- navbar version 1.0 -->
+  <nav class="navbar navbar-expand-lg navbar-light light-blue-bg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="icons/logo.svg" alt="logo PRE" /></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Elektřina</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Plyn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">služby</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Potřebuji zařídit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakty</a>
+          </li>
+        </ul>
+
+        <div class="navbar-nav ml-auto">
+          <div class="btn-group">
+            <button type="button" class="btn primary" data-bs-toggle="modal" data-bs-target="#searchbar"><i
+                class="fas fa-search"></i></button>
+
+            <button type="button" class="btn btn-success mt-3 mt-md-0 mb-2 mb-md-0" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+                </path>
+              </svg>
+              Přihlásit
+            </button>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EN</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- endif navbar version 1.0 -->
+  <!-- /hotovo -->
+
+  <!-- hotovo -->
+  <!-- searchbar version 1.0 -->
+  <div class="modal fade" id="searchbar" tabindex="-1" aria-labelledby="searchbar" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-fusion-900">
+        <div class="modal-header">
+          <button type="button" class="btn-close-white btn-close btn-big" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="card card-body card-transparent card-borderless mt-5">
+            <div class="form-floating">
+              <input type="text" class="form-control form-control-xxl" id="searchbarInput"
+                placeholder="Napište co hledáte">
+              <label for="searchbarInput">Napište co hledáte</label>
+            </div>
+            <p class="text-right text-white mt-3">Zkuste například vyúčtování, nebo formuláře ke stažení... :)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- endif searchbar version 1.0 -->
+  <!-- /hotovo -->
+
+  <div class="container-fluid pt-5 mt-5 p-0">
+    <!-- hotovo -->
+    <main class="p-3 p-md-5">
+      <div class="row">
+        <div class="col-12">
+          <!-- old compomnent - for refactor to BS5! -->
+          <div class="title-bg">
+            <div class="row">
+              <div class="col-12 col-md-8">
+                <h1 class="h1 text-primary font-weight-bold pt-0 mt-0 pt-md-5 mt-md-5">Postaráme se o Vaší <span
+                    class="text-alert">elektřinu</span>, <span class="text-alert">plyn</span>, <span
+                    class="text-alert">elektromobilitu</span> či <span class="text-alert">klimatizaci</span>.</h1>
+                <button class="btn text-primary text-decoration-underline">Mám zájem</button>
+              </div>
+            </div>
+          </div>
+          <!-- old compomnent - for refactor to BS5! -->
+        </div>
+
+        <div class="col-12">
+          <!-- old compomnent - for refactor to BS5! -->
+          <div class="bg-secondary mt-5">
+            <div class="d-inline-flex align-items-center">
+              <p class="text-primary m-3">Pobočky jsou nejméně vytížené mezi 9:00 až 11:00 </p>
+              <a href="#" class="text-primary text-decoration-underline">Najít nejbližší pobočku</a>
+            </div>
+          </div>
+          <!-- old compomnent - for refactor to BS5! -->
+        </div>
+      </div>
+    </main>
+    <!-- /hotovo -->
+
+    <!-- hotovo -->
+    <div class="p-3 p-md-5">
+      <!-- our services -->
+      <div class="row">
+        <div class="d-grid gap-4">
+
+          <div class="col-12">
+            <h2 class="h2">Naše služby</h2>
+          </div>
+
+          <div class="col-12">
+            <!-- tile compomponent version 1.0 for BS5! -->
+            <div class="bg-transparent bg-nature tile-responsive">
+              <div class="card-transparent card justify-content-center h-100">
+                <h3 class="h2 text-secondary">Příroda na prvním místě</h3>
+                <p class="text-secondary">
+                  V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.
+                </p>
+                <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+              </div>
+            </div>
+            <!-- endif tile compomponent version 1.0 for BS5! -->
+          </div>
+
+          <div class="col-12">
+            <!-- tile compomponent version 1.0 for BS5! -->
+            <div class="bg-clima bg-transparent tile-responsive">
+              <div class="card-transparent card justify-content-center h-100">
+                <h3 class="h2 text-secondary">Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila</h3>
+                <p class="text-secondary">
+                  Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
+                </p>
+                <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+              </div>
+            </div>
+            <!-- endif tile compomponent version 1.0 for BS5! -->
+          </div>
+
+          <div class="col-12">
+            <!-- tile compomponent version 1.0 for BS5! -->
+            <div class="bg-ecar bg-transparent tile-responsive">
+              <div class="card-transparent card justify-content-center h-100">
+                <h3 class="h2 text-secondary">Vlastníte elektromobil</h3>
+                <p class="text-secondary">
+                  Karta na nabijení na našich stanicích už od 200 Kč/měsíc
+                </p>
+                <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+              </div>
+            </div>
+            <!-- endif tile compomponent version 1.0 for BS5! -->
+          </div>
+
+          <div class="col-12">
+            <!-- tile compomponent version 1.0 for BS5! -->
+            <div class="bg-eshop bg-transparent tile-responsive">
+              <div class="card-transparent card justify-content-center h-100">
+                <h3 class="h2 text-secondary">Eshop</h3>
+                <p class="text-secondary">
+                  Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
+                </p>
+                <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+              </div>
+            </div>
+            <!-- endif tile compomponent version 1.0 for BS5! -->
+          </div>
+
+          <!-- prakticka ukazka chovani tile-responsive podle gridu -->
+          <!-- <div class="row">
+            <div class="col-12 col-lg-9">
+              <div class="bg-transparent bg-nature tile-responsive">
+                <div class="card-transparent card justify-content-center h-100">
+                  <h3 class="h2 text-secondary">Příroda na prvním místě</h3>
+                  <p class="text-secondary">
+                    V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+              <div class="bg-clima bg-transparent tile-responsive">
+                <div class="card-transparent card justify-content-center h-100">
+                  <h3 class="h2 text-secondary">Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila</h3>
+                  <p class="text-secondary">
+                    Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-4">
+              <div class="bg-ecar bg-transparent tile-responsive">
+                <div class="card-transparent card justify-content-center h-100">
+                  <h3 class="h2 text-secondary">Vlastníte elektromobil</h3>
+                  <p class="text-secondary">
+                    Karta na nabijení na našich stanicích už od 200 Kč/měsíc
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-8">
+              <div class="bg-eshop bg-transparent tile-responsive">
+                <div class="card-transparent card justify-content-center h-100">
+                  <h3 class="h2 text-secondary">Eshop</h3>
+                  <p class="text-secondary">
+                    Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+                </div>
+              </div>
+            </div> -->
+            <!-- endif prakticka ukazka chovani tile-responsive podle gridu -->
+
+          <!-- logo list component / responsive part underconstruction for BS5! -->
+          <ul class="list-inline d-flex align-content-center flex-wrap justify-content-between">
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz PRE distibuce" /></a></li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz PRE měření" /></a></li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz PRE zákaznická" /></a>
+            </li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz Pre servisní" /></a></li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz KORMAK" /></a></li>
+            <li class="list-inline-item"><a href=""><img src="icons/logo.svg" alt="Logo odkaz VOLTCOM" /></a></li>
+          </ul>
+          <!-- endif logo list -->
+
+        </div>
+      </div>
+
+      <!-- info compomponent underconstruction for BS5! -->
+      <div class="bg-secondary card-body d-flex flex-wrap align-items-center justify-content-between">
+        <span class="text-primary">infolinka 24/7: <span class="text-alert fw-bold"> 800 550 055</span></span>
+        <span class="text-primary">Email: <span class="text-alert fw-bold"> pre@pre.cz</span></span>
+        <a href="#" class="text-primary fw-bold text-decoration-underline">Seznam poboček</a>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">Sledujte PRE:</li>
+          <li class="list-inline-item"><a class="btn"><img src="icons/facebook.svg"
+                alt="odkaz na facebookovu stránku PRE"></a></li>
+          <li class="list-inline-item"><a class="btn"><img src="icons/youtube.svg"
+                alt="odkaz na youtube stránku PRE"></a></li>
+          <li class="list-inline-item"><a class="btn"><img src="icons/linkedin.svg"
+                alt="odkaz na linkedin společnosti PRE"></a></li>
+        </ul>
+      </div>
+      <!-- endif info compomponent underconstruction for BS5! -->
+    </div>
+    <!-- /hotovo -->
+
+    <!-- hotovo -->
+    <!-- footer compomponent underconstruction for BS5! -->
+    <footer class="bg-primary p-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- footer breadcrumb component - testing in progress! -->
+            <ul class="float-start list-unstyled pt-3">
+              <li>
+                <a href=""><img src="icons/mini-pre.svg" alt="malé logo PRE"></a>
+              </li>
+            </ul>
+            <!-- endif footer breadcrumb component - testing in progress! -->
+          </div>
+
+          <!-- multilist compomponent underconstruction for BS5! -->
+          <div class="d-none d-md-block">
+            <ul class="list-inline flex-wrap flex-row d-flex w-100">
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="list-unstyled">
+                  <li class="mb-4"><img src="icons/logo-noedges.png" alt="logo PRE" /></li>
+                  <li class="text-secondary">Pražská energetika, a. s.</li>
+                  <li class="text-secondary">Na Hroudě 1492/4</li>
+                  <li class="text-secondary">100 05 Praha 10</li>
+                </ul>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4 text-light">ELEKTŘINA</h4>
+                  </li>
+                  <li class="text-secondary">Garant</li>
+                  <li class="text-secondary">Klasik</li>
+                  <li class="text-secondary">PREekoproud</li>
+                  <li class="text-secondary">Přehled produktů</li>
+                </ul>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4 text-light">PLYN</h4>
+                  </li>
+                  <li class="text-secondary">PRE plyn fix plus</li>
+                  <li class="text-secondary">PRE plyn klasik</li>
+                  <li class="text-secondary">Přehled produktů</li>
+                </ul>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4 text-light">SLUŽBY</h4>
+                  </li>
+                  <li class="text-secondary">FVE</li>
+                  <li class="text-secondary">Wall Boxy</li>
+                  <li class="text-secondary">Klimatizace</li>
+                  <li class="text-secondary">Wall boxy</li>
+                  <li class="text-secondary">Plynové kotle</li>
+                  <li class="text-secondary">Tepelná čerpadla</li>
+                </ul>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4 text-light">POTŘEBUJI ZAŘÍDIT</h4>
+                  </li>
+                  <li class="text-secondary">Dokumenty</li>
+                  <li class="text-secondary">Chete přejít / vrátit se k PRE</li>
+                  <li class="text-secondary">Vysvětlení faktury</li>
+                  <li class="text-secondary">Jak zaplatit fakturu</li>
+                  <li class="text-secondary">Řešení pohledávek</li>
+                  <li class="text-secondary">Přeplatek ze záloh</li>
+                  <li class="text-secondary">Připojení odběru</li>
+                  <li class="text-secondary">Hlášení poruchy</li>
+                </ul>
+              </li>
+              <li class="list-inline-item list-unstyled flex-lg-fill">
+                <ul class="">
+                  <li>
+                    <h4 class="h4 text-light">SPOLEČNOST</h4>
+                  </li>
+                  <li class="text-secondary">Kontakty</li>
+                  <li class="text-secondary">Tiskové centrum</li>
+                  <li class="text-secondary">Zákaznická linka</li>
+                  <li class="text-secondary">Kontaktujte nás</li>
+                  <li class="text-secondary">Zákatnické centrum</li>
+                  <li class="text-secondary">Kontaktní adresy</li>
+                  <li class="text-secondary">Pohledávky/upomínky</li>
+                  <li class="text-secondary">Bankovní spojení</li>
+                  <li class="text-secondary">Kariéra</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- endif multilist compomponent underconstruction for BS5! -->
+
+          <!-- accordion component - testing in progress! -->
+          <div class="accordion d-block d-md-none" id="accordionExample">
+            <div class="line-t">
+              <h2 class="m-auto" id="headingOne">
+                <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span class="h4">ELEKTŘINA</span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="Elektřina"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-primary">
+                  <ul class="p-0">
+                    <li class="text-secondary">Garant</li>
+                    <li class="text-secondary">Klasik</li>
+                    <li class="text-secondary">PREekoproud</li>
+                    <li class="text-secondary">Přehled produktů</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line-t">
+              <h2 class="m-auto" id="headingTwo">
+                <button class="accordion-button bg-primary collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <span class="h4">PLYN</span>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="Plyn"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-primary">
+                  <ul class="p-0">
+                    <li class="text-secondary">PRE plyn fix plus</li>
+                    <li class="text-secondary">PRE plyn klasik</li>
+                    <li class="text-secondary">Přehled produktů</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line-t">
+              <h2 class="m-auto" id="headingThree">
+                <button class="accordion-button bg-primary collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <span class="h4">SPOLEČNOST</span>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="Společnost"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-primary">
+                  <ul class="p-0">
+                    <li class="text-secondary">Kontakty</li>
+                    <li class="text-secondary">Tiskové centrum</li>
+                    <li class="text-secondary">Zákaznická linka</li>
+                    <li class="text-secondary">Kontaktujte nás</li>
+                    <li class="text-secondary">Zákaznické centrum</li>
+                    <li class="text-secondary">Kontaktní adresy</li>
+                    <li class="text-secondary">Pohledávky/upomínky</li>
+                    <li class="text-secondary">Bankovní spojení</li>
+                    <li class="text-secondary">Kariéra</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line-t">
+              <h2 class="m-auto" id="headingFour">
+                <button class="accordion-button bg-primary collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <span class="h4">SLUŽBY</span>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="Služby"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-primary">
+                  <ul class="p-0">
+                    <li class="text-secondary">FVE</li>
+                    <li class="text-secondary">Wall Boxy</li>
+                    <li class="text-secondary">Klimatizace</li>
+                    <li class="text-secondary">Wall boxy</li>
+                    <li class="text-secondary">Plynové kotle</li>
+                    <li class="text-secondary">Tepelná čerpadla</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line-t">
+              <h2 class="m-auto" id="headingFive">
+                <button class="accordion-button bg-primary collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <span class="h4">POTŘEBUJI ZAŘÍDIT</span>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="Potřebuji zařídit"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-primary">
+                  <ul class="p-0">
+                    <li class="text-secondary">Dokumenty</li>
+                    <li class="text-secondary">Chcete přejít / vrátit se k PRE</li>
+                    <li class="text-secondary">Vysvětlení faktury</li>
+                    <li class="text-secondary">Jak zaplatit fakturu</li>
+                    <li class="text-secondary">Řešení pohledávek</li>
+                    <li class="text-secondary">Přeplatek ze záloh</li>
+                    <li class="text-secondary">Připojení odběru</li>
+                    <li class="text-secondary">Hlášení poruchy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- endif accordion component - testing in progress! -->
+
+          <!-- footer nav component underconstruction for BS5! -->
+          <div class="line">
+            <div class="d-flex flex-row justify-content-between flex-wrap">
+              <div><a href="" class="btn btn-link btn-sm text-white">Cookies</a></div>
+              <div><a href="" class=" btn btn-link btn-sm text-white">Copyright</a></div>
+              <div><a href="" class="btn btn-link btn-sm text-white">Fakturační údaje</a></div>
+              <div><a href="" class=" btn btn-link btn-sm text-white">Přístupnost</a></div>
+              <div><a href="" class=" btn btn-link btn-sm text-white">Podmínky použití webu</a></div>
+              <div><a href="" class="btn btn-link btn-sm text-white">Obchodní podmínky</a></div>
+            </div>
+          </div>
+          <!-- endif footer nav component underconstruction for BS5! -->
+
+          <!-- copyright component ver. 1.0 -->
+          <div class="copyright text-center text-lg-start">
+            <p class="text-secondary">
+              <small>@Vyrobeno s pořádnou dávkou energie 2014-2021 Pražská energetika,a.s.</small>
+            </p>
+          </div>
+          <!-- endif copyright component ver. 1.0 -->
+        </div>
+      </div>
+    </footer>
+    <!-- endif footer compomponent underconstruction for BS5! -->
+    <!-- /hotovo -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
