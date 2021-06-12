@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TileService } from '../../_services/tile.service';
+import { ITile } from '../../_interfaces/itile';
 
 @Component({
   selector: 'app-homepage',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  tiles: ITile[] | undefined;
+
+  constructor(
+    private tileService: TileService
+  ) { }
 
   ngOnInit(): void {
+    this.getTiles();
+  }
+
+  getTiles(): void {
+    this.tileService.getTiles()
+      .subscribe(tiles => this.tiles = tiles);
   }
 
 }

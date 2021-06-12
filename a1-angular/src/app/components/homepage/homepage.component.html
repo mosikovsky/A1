@@ -5,10 +5,10 @@
       <div class="title-bg">
         <div class="row">
           <div class="col-12 col-md-8">
-            <h1 class="h1 text-primary font-weight-bold pt-0 mt-0 pt-md-5 mt-md-5">Postaráme se o Vaší <span
-              class="text-alert">elektřinu</span>, <span class="text-alert">plyn</span>, <span
-              class="text-alert">elektromobilitu</span> či <span class="text-alert">klimatizaci</span>.</h1>
-            <button class="btn text-primary text-decoration-underline">Mám zájem</button>
+            <h1 class="h1 text-primary font-weight-bold pt-0 mt-0 pt-md-5 mt-md-5">{{ 'mainHeading.wewillTakeCareOfYour' | translate }} <span
+              class="text-alert">{{ 'mainHeading.electricity' | translate }}</span>{{ 'mainHeading.blueComma' | translate }} <span class="text-alert">{{ 'mainHeading.gas' | translate }}</span>{{ 'mainHeading.blueComma' | translate }}<span
+              class="text-alert">{{ 'mainHeading.electromobility' | translate }}</span> {{ 'mainHeading.or' | translate }} <span class="text-alert">{{ 'mainHeading.airConditioning' | translate }}</span>{{ 'mainHeading.blueDot' | translate }}</h1>
+            <button class="btn text-primary text-decoration-underline">{{ 'mainInterested' | translate }}</button>
           </div>
         </div>
       </div>
@@ -19,8 +19,8 @@
       <!-- old compomnent - for refactor to BS5! -->
       <div class="bg-secondary mt-5">
         <div class="d-inline-flex align-items-center">
-          <p class="text-primary m-3">Pobočky jsou nejméně vytížené mezi 9:00 až 11:00 </p>
-          <a href="#" class="text-primary text-decoration-underline">Najít nejbližší pobočku</a>
+          <p class="text-primary m-3">{{ 'branchesText' | translate }}</p>
+          <a href="#" class="text-primary text-decoration-underline">{{ 'nearestBranch' | translate }}</a>
         </div>
       </div>
       <!-- old compomnent - for refactor to BS5! -->
@@ -34,118 +34,24 @@
     <div class="d-grid gap-4">
 
       <div class="col-12">
-        <h2 class="h2">Naše služby</h2>
+        <h2 class="h2">{{ 'ourServicesHeading' | translate }}</h2>
       </div>
 
-      <div class="col-12">
-        <!-- tile compomponent version 1.0 for BS5! -->
-        <div class="bg-transparent bg-nature tile-responsive">
-          <div class="card-transparent card justify-content-center h-100">
-            <h3 class="h2 text-secondary">Příroda na prvním místě</h3>
-            <p class="text-secondary">
-              V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.
-            </p>
-            <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-          </div>
-        </div>
-        <!-- endif tile compomponent version 1.0 for BS5! -->
-      </div>
-
-      <div class="col-12">
-        <!-- tile compomponent version 1.0 for BS5! -->
-        <div class="bg-clima bg-transparent tile-responsive">
-          <div class="card-transparent card justify-content-center h-100">
-            <h3 class="h2 text-secondary">Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila</h3>
-            <p class="text-secondary">
-              Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
-            </p>
-            <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-          </div>
-        </div>
-        <!-- endif tile compomponent version 1.0 for BS5! -->
-      </div>
-
-      <div class="col-12">
-        <!-- tile compomponent version 1.0 for BS5! -->
-        <div class="bg-ecar bg-transparent tile-responsive">
-          <div class="card-transparent card justify-content-center h-100">
-            <h3 class="h2 text-secondary">Vlastníte elektromobil</h3>
-            <p class="text-secondary">
-              Karta na nabijení na našich stanicích už od 200 Kč/měsíc
-            </p>
-            <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-          </div>
-        </div>
-        <!-- endif tile compomponent version 1.0 for BS5! -->
-      </div>
-
-      <div class="col-12">
-        <!-- tile compomponent version 1.0 for BS5! -->
-        <div class="bg-eshop bg-transparent tile-responsive">
-          <div class="card-transparent card justify-content-center h-100">
-            <h3 class="h2 text-secondary">Eshop</h3>
-            <p class="text-secondary">
-              Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
-            </p>
-            <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-          </div>
-        </div>
-        <!-- endif tile compomponent version 1.0 for BS5! -->
-      </div>
-
-      <!-- prakticka ukazka chovani tile-responsive podle gridu -->
-      <!-- <div class="row">
-        <div class="col-12 col-lg-9">
-          <div class="bg-transparent bg-nature tile-responsive">
+      <ng-container *ngIf="tiles">
+        <div [ngClass]="'col-' + tile.size" *ngFor="let tile of tiles">
+          <!-- tile compomponent version 1.0 for BS5! -->
+          <div [ngClass]="tile.background + ' bg-transparent tile-responsive'">
             <div class="card-transparent card justify-content-center h-100">
-              <h3 class="h2 text-secondary">Příroda na prvním místě</h3>
+              <h3 class="h2 text-secondary">{{ tile.heading_cs }}</h3>
               <p class="text-secondary">
-                V PRE máme přírodu na prvním místě. Nějaký další lorem ipsum text.
+                {{ tile.subheading_cs }}
               </p>
-              <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
+              <a href="#" class="text-secondary text-decoration-underline mb-5">{{ 'findMoreLink' | translate }}</a>
             </div>
           </div>
+          <!-- endif tile compomponent version 1.0 for BS5! -->
         </div>
-
-        <div class="col-12 col-lg-3">
-          <div class="bg-clima bg-transparent tile-responsive">
-            <div class="card-transparent card justify-content-center h-100">
-              <h3 class="h2 text-secondary">Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila</h3>
-              <p class="text-secondary">
-                Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
-              </p>
-              <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-
-        <div class="col-4">
-          <div class="bg-ecar bg-transparent tile-responsive">
-            <div class="card-transparent card justify-content-center h-100">
-              <h3 class="h2 text-secondary">Vlastníte elektromobil</h3>
-              <p class="text-secondary">
-                Karta na nabijení na našich stanicích už od 200 Kč/měsíc
-              </p>
-              <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-8">
-          <div class="bg-eshop bg-transparent tile-responsive">
-            <div class="card-transparent card justify-content-center h-100">
-              <h3 class="h2 text-secondary">Eshop</h3>
-              <p class="text-secondary">
-                Vysoké letní teploty? Nic s čím by si naše klimatizace neporadila
-              </p>
-              <a href="#" class="text-secondary text-decoration-underline mb-5">Zjistit více</a>
-            </div>
-          </div>
-        </div> -->
-      <!-- endif prakticka ukazka chovani tile-responsive podle gridu -->
+      </ng-container>
 
       <!-- logo list component / responsive part underconstruction for BS5! -->
       <ul class="list-inline d-flex align-content-center flex-wrap justify-content-between">
@@ -164,11 +70,11 @@
 
   <!-- info compomponent underconstruction for BS5! -->
   <div class="bg-secondary card-body d-flex flex-wrap align-items-center justify-content-between">
-    <span class="text-primary">infolinka 24/7: <span class="text-alert fw-bold"> 800 550 055</span></span>
-    <span class="text-primary">Email: <span class="text-alert fw-bold"> pre@pre.cz</span></span>
-    <a href="#" class="text-primary fw-bold text-decoration-underline">Seznam poboček</a>
+    <span class="text-primary">{{ 'infoLine' | translate }} <span class="text-alert fw-bold">{{ 'redNumber' | translate }}</span></span>
+    <span class="text-primary">{{ 'email.label' | translate }} <span class="text-alert fw-bold">{{ 'email.address' | translate }}</span></span>
+    <a href="#" class="text-primary fw-bold text-decoration-underline">{{ 'listBranches' | translate }}</a>
     <ul class="list-inline mb-0">
-      <li class="list-inline-item">Sledujte PRE:</li>
+      <li class="list-inline-item">{{ 'followPre' | translate }}</li>
       <li class="list-inline-item">
         <a class="btn"><img src="assets/icons/facebook.svg" alt="odkaz na facebookovu stránku PRE"></a>
       </li>

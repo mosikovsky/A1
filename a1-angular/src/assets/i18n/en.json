@@ -6,7 +6,7 @@
     "needs": "Needs",
     "contacts": "Contacts",
     "loginBtn": "Log in",
-    "language": "CZE"
+    "language": "CZ"
   },
 
   "searchBar": {
@@ -17,11 +17,11 @@
   "mainHeading": {
     "wewillTakeCareOfYour": "Postaráme se o Vaší ",
     "electricity": "elektřinu",
-    "blueComma": ", ",
-    "gas":"plyn ",
-    "electromobility": "elektromobilitu ",
-    "or":"či ",
-    "air conditioning": "klimatizaci",
+    "blueComma": ",",
+    "gas": "plyn",
+    "electromobility": "elektromobilitu",
+    "or": "či ",
+    "airConditioning": "klimatizaci",
     "blueDot":"."
   },
 
@@ -52,53 +52,77 @@
   },
 
   "infoLine": "Infoline 24/7:",
-  "redNummber": "800 550 055",
-  "email": "Email:",
-  "emailAdress": "pre@pre.cz",
+  "redNumber": "800 550 055",
+  "email": {
+    "label": "Email:",
+    "address": "pre@pre.cz"
+  },
   "listBranches": "List of branches",
   "followPre": "Follow PRE:",
 
-  "multiElectricity": {
-    "clasic": "Clasic",
-    "ecostream": "PREecostream",
-    "productOverview": "Product overview"
-  },
-  "multiGas": {
-    "clasic": "Clasic",
-    "ecostream": "PREecostream",
-    "productOverview": "Product overview"
-  },
-  "multiServices": {
-    "wallBoxes": "Wallboxes",
-    "airCond": "Air conditioning",
-    "gasBoilers": "Gas boilers",
-    "heatPumps": "Heat pumps"
-  },
-  "documents": {
-    "documents": "Documents",
-    "goReturn": "You want to go to / return to PR",
-    "invoiceExp": "Invoice explanation",
-    "recivables": "Settlement of receivables",
-    "overpay": "Overpayment from advances",
-    "subConnection": "Subscription connection",
-    "invoicePay": "How to pay an invoice",
-    "failReport": "Report failure"
-  },
-  "company": {
-    "contacts": "Contacts",
-    "pressCenter": "Press center",
-    "customerService": "Customer service",
-    "contactUs": "Contact us",
-    "customerCentrum": "Customer centre",
-    "contactAdresses": "Contact addresses",
-    "recivablesReminders": "Receivables / reminders",
-    "bankConnection": "Bank connection",
-    "career": "Career"
-  },
-  "linksFooter": {
-    "billingInfo": "Billing information",
-    "accessibility": "Accessibility",
-    "terms": "Terms of use of the website",
-    "conditions": "Business conditions"
+  "footer": {
+    "accordion": {
+      "multiElectricity": {
+        "heading": "ELEKTŘINA",
+        "items": {
+          "clasic": "Clasic",
+          "ecostream": "PREecostream",
+          "productOverview": "Product overview"
+        }
+      },
+      "multiGas": {
+        "heading": "PLYN",
+        "items": {
+          "clasic": "Clasic",
+          "ecostream": "PREecostream",
+          "productOverview": "Product overview"
+        }
+      },
+      "multiServices": {
+        "heading": "SLUŽBY",
+        "items": {
+          "wallBoxes": "Wallboxes",
+          "airCond": "Air conditioning",
+          "gasBoilers": "Gas boilers",
+          "heatPumps": "Heat pumps"
+        }
+      },
+      "documents": {
+        "heading": "POTŘEBUJI ZAŘÍDIT",
+        "items": {
+          "documents": "Documents",
+          "goReturn": "You want to go to / return to PR",
+          "invoiceExp": "Invoice explanation",
+          "recivables": "Settlement of receivables",
+          "overpay": "Overpayment from advances",
+          "subConnection": "Subscription connection",
+          "invoicePay": "How to pay an invoice",
+          "failReport": "Report failure"
+        }
+      },
+      "company": {
+        "heading": "SPOLEČNOST",
+        "items": {
+          "contacts": "Contacts",
+          "pressCenter": "Press center",
+          "customerService": "Customer service",
+          "contactUs": "Contact us",
+          "customerCentrum": "Customer centre",
+          "contactAdresses": "Contact addresses",
+          "recivablesReminders": "Receivables / reminders",
+          "bankConnection": "Bank connection",
+          "career": "Career"
+        }
+      }
+    },
+    "links": {
+      "cookies": "Cookies",
+      "copyright": "Copyright",
+      "billingInfo": "Billing information",
+      "accessibility": "Accessibility",
+      "terms": "Terms of use of the website",
+      "conditions": "Business conditions"
+    },
+    "copyright": "@Vyrobeno s pořádnou dávkou energie 2014-2021 Pražská energetika, a.s."
   }
 }
