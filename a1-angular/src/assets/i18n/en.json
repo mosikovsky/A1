@@ -61,11 +61,11 @@
   "followPre": "Follow PRE:",
 
   "footer": {
-    "accordion": {
+    "menu": {
       "multiElectricity": {
         "heading": "ELEKTŘINA",
         "items": {
-          "clasic": "Clasic",
+          "classic": "Classic",
           "ecostream": "PREecostream",
           "productOverview": "Product overview"
         }
@@ -73,8 +73,8 @@
       "multiGas": {
         "heading": "PLYN",
         "items": {
-          "clasic": "Clasic",
-          "ecostream": "PREecostream",
+          "gasFixPlus": "PRE gas fix plus",
+          "gasClassic": "Classic",
           "productOverview": "Product overview"
         }
       },
@@ -108,7 +108,7 @@
           "customerService": "Customer service",
           "contactUs": "Contact us",
           "customerCentrum": "Customer centre",
-          "contactAdresses": "Contact addresses",
+          "contactAddresses": "Contact addresses",
           "recivablesReminders": "Receivables / reminders",
           "bankConnection": "Bank connection",
           "career": "Career"

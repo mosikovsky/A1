@@ -61,12 +61,12 @@
   "followPre": "Sledujte PRE:",
 
   "footer": {
-    "accordion": {
+    "menu": {
       "multiElectricity": {
         "heading": "ELEKTŘINA",
         "items": {
           "garant": "Garant",
-          "clasic": "Klasik",
+          "classic": "Klasik",
           "ecostream": "PREecoproud",
           "productOverview": "Přehled produktů"
         }
@@ -75,7 +75,7 @@
         "heading": "PLYN",
         "items": {
           "gasFixPlus": "PRE plyn fix plus",
-          "gasClasic": "PRE plyn klasik",
+          "gasClassic": "PRE plyn klasik",
           "productOverview": "Přehled produktů"
         }
       },
@@ -93,7 +93,7 @@
         "heading": "POTŘEBUJI ZAŘÍDIT",
         "items": {
           "documents": "Dokumenty",
-          "goReturn": "Chete přejít / vrátit se k PRE",
+          "goReturn": "Chcete přejít / vrátit se k PRE",
           "invoiceExp": "Vysvětlení faktury",
           "invoicePay": "Jak zaplatit fakturu",
           "recivables": "Řešení pohledávek",
@@ -110,7 +110,7 @@
           "customerService": "Zákaznické linka",
           "contactUs": "Kontaktujte nás",
           "customerCentrum": "Zákaznické centrum",
-          "contactAdresses": "Kontaktní adresy",
+          "contactAddresses": "Kontaktní adresy",
           "recivablesReminders": "Pohledávky/upomínky",
           "bankConnection": "Bankovní spojení",
           "career": "Kariéra"
