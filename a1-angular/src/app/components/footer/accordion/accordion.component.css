@@ -1,0 +1,15 @@
+/* accordion */
+.accordion .h4 {
+  margin-bottom: 0;
+  color: #fff; }
+
+.accordion-button:focus {
+  background-color: #1c2f67 !important;
+  color: #1c2f67 !important; }
+
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: none !important; }
+
+/* end accordion */

@@ -1,3 +1,36 @@
+.searchbar {
+  height: 60px;
+  background-color: #1c2f67;
+  border-radius: 4px;
+  padding: 10px !important;
+  position: relative;
+  margin-top: -1.7%; }
 
+.search_input {
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  line-height: 40px;
+  transition: width 0.4s linear; }
 
-/*# sourceMappingURL=searchbar.component.css.map */
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 200px;
+  transition: width 0.4s linear; }
+
+.searchbar:hover > .search_icon {
+  background: #ffffff;
+  color: #1c2f67; }
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+  color: #ffffff;
+  text-decoration: none; }
