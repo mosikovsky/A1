@@ -12,6 +12,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ReactiveFormsModule } from "@angular/forms";
+import { AccordionComponent } from './components/footer/accordion/accordion.component';
+import { MultiListComponent } from './components/footer/multi-list/multi-list.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -23,7 +25,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     SearchbarComponent,
     FooterComponent,
-    HomepageComponent
+    HomepageComponent,
+    AccordionComponent,
+    MultiListComponent
   ],
   imports: [
     BrowserModule,

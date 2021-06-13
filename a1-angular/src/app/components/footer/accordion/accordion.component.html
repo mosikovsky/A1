@@ -1,0 +1,108 @@
+<!-- accordion component - testing in progress! -->
+<div class="accordion d-block d-md-none" id="accordionExample">
+  <div class="line-t">
+    <h2 class="m-auto" id="headingOne">
+      <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <span class="h4">{{ 'footer.menu.multiElectricity.heading' | translate }}</span>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" [attr.aria-labelledby]="'footer.menu.multiElectricity.heading' | translate"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-primary">
+        <ul class="p-0">
+          <li class="text-secondary">{{ 'footer.menu.multiElectricity.items.garant' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.multiElectricity.items.classic' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.multiElectricity.items.ecostream' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.multiElectricity.items.productOverview' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="line-t">
+    <h2 class="m-auto" id="headingTwo">
+      <button class="accordion-button bg-primary collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <span class="h4">{{ 'footer.menu.multiGas.heading' | translate }}</span>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" [attr.aria-labelledby]="'footer.menu.multiGas.heading' | translate"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-primary">
+        <ul class="p-0">
+          <li class="text-secondary">{{ 'footer.menu.multiGas.items.gasFixPlus' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.multiGas.items.gasClassic' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.multiGas.items.productOverview' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="line-t">
+    <h2 class="m-auto" id="headingThree">
+      <button class="accordion-button bg-primary collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <span class="h4">{{ 'footer.menu.company.heading' | translate }}</span>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" [attr.aria-labelledby]="'footer.menu.company.heading' | translate"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-primary">
+        <ul class="p-0">
+          <li class="text-secondary">{{ 'footer.menu.company.items.contacts' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.company.items.pressCenter' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.company.items.customerService' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.company.items.contactUs' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.company.items.customerCentrum' | translate}}</li>
+          <li class="text-secondary">{{ 'footer.menu.company.items.contactAddresses' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.company.items.recivablesReminders' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.company.items.bankConnection' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.company.items.career' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="line-t">
+    <h2 class="m-auto" id="headingFour">
+      <button class="accordion-button bg-primary collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <span class="h4">{{ 'footer.menu.multiServices.heading' | translate }}</span>
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" [attr.aria-labelledby]="'footer.menu.multiServices.heading' | translate"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-primary">
+        <ul class="p-0">
+          <li class="text-secondary">{{ 'footer.menu.multiServices.items.fve' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.multiServices.items.wallBoxes' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.multiServices.items.airCond' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.multiServices.items.gasBoilers' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.multiServices.items.heatPumps' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="line-t">
+    <h2 class="m-auto" id="headingFive">
+      <button class="accordion-button bg-primary collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        <span class="h4">{{ 'footer.menu.documents.heading' | translate }}</span>
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" [attr.aria-labelledby]="'footer.menu.documents.heading' | translate"
+         data-bs-parent="#accordionExample">
+      <div class="accordion-body bg-primary">
+        <ul class="p-0">
+          <li class="text-secondary">{{ 'footer.menu.documents.items.documents' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.documents.items.goReturn' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.documents.items.invoiceExp' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.documents.items.invoicePay' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.documents.items.recivables' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.documents.items.overpay' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.documents.items.subConnection' | translate }}</li>
+          <li class="text-secondary">{{ 'footer.menu.documents.items.failReport' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- endif accordion component - testing in progress! -->
