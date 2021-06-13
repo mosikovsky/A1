@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LocalSettingsService } from './_services/local-settings.service';
 
 @Component({
   selector: 'app-root',
@@ -10,14 +11,22 @@ export class AppComponent {
 
   constructor(
     public translate: TranslateService,
+    private localSettings: LocalSettingsService
   ) {
     // translate init
     translate.addLangs(['cs', 'en']);
     translate.setDefaultLang('cs');
 
-    const lang = navigator.language;
+    let lang: string;
 
-    if (lang === 'en-GB' || lang === 'en-US') {
+    var storedLang: string = localSettings.getLanguage();
+    if (storedLang !== "") {
+      lang = storedLang;
+    } else {
+      lang = navigator.language;
+    }
+
+    if (lang === 'en-GB' || lang === 'en-US' || lang === 'en') {
       translate.use('en');
     } else if (lang === 'cs') {
       translate.use('cs');
