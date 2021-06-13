@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ITile } from '../../../_interfaces/itile';
+import { LocalSettingsService } from '../../../_services/local-settings.service';
 
 @Component({
   selector: 'app-tile-item',
@@ -9,10 +10,14 @@ import { ITile } from '../../../_interfaces/itile';
 export class TileItemComponent implements OnInit {
 
   @Input() tile: ITile = {};
+  lang: string;
 
-  constructor() { }
+  constructor(
+    private localSettings: LocalSettingsService
+  ) { }
 
   ngOnInit(): void {
+    this.lang = this.localSettings.getLanguage();
   }
 
 }

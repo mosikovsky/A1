@@ -28,8 +28,10 @@ export class AppComponent {
 
     if (lang === 'en-GB' || lang === 'en-US' || lang === 'en') {
       translate.use('en');
+      this.localSettings.setLanguage('en');
     } else if (lang === 'cs') {
       translate.use('cs');
+      this.localSettings.setLanguage('cs');
     }
   }
 
