@@ -1,11 +1,18 @@
 /**
  * Colors
  */
-
-$color-brand-light: #e8eaf0;
-$color-text-secondary:#f4f7fc;
+/* basic colors */
+$color-light: #e8eaf0;
+$color-secondary:#f4f7fc;
 $color-border-grey: #8993b0;
 $color-brand-blue: #1c2f67;
 $color-linear-dark: linear-gradient(0deg, #0c23618f, #0c23618f);
-$color-red: #e40521;
+$color-alert: #e40521;
+/* end basic colors */
 
+/* text color */
+$color-text-primary: $color-brand-blue;
+$color-text-secondary: $color-secondary;
+$color-text-alert: $color-alert;
+$color-text-light: $color-light;
+/* end text color */
