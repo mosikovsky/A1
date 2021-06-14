@@ -125,6 +125,34 @@
       "terms": "Podmínky použití webu",
       "conditions": "Obchodní podmínky"
     },
+    "alt": {
+      "nav": {
+        "logo":{
+        "pre": "logo PRE"
+        }
+      } ,
+      "homepage": {
+        "logo": {
+          "preDistribution": "Logo odkaz PRE distibuce",
+          "preMeasurement": "Logo odkaz PRE měření",
+          "preCustomer": "Logo odkaz PRE zákaznická",
+          "service": "Logo odkaz Pre servisní",
+          "kormak": "Logo odkaz KORMAK",
+          "voltcom": "Logo odkaz VOLTCOM"
+        },
+        "socialLinks": {
+          "facebook": "odkaz na facebookovu stránku PRE",
+          "youtube": "odkaz na youtube stránku PRE",
+          "linkedin": "odkaz na linkedin společnosti PRE"
+        }
+      },
+      "footer": {
+        "logo":{
+          "smallPre": "malé logo PRE",
+          "pre": "logo PRE"
+        }
+      } 
+    },
     "copyright": "@Vyrobeno s pořádnou dávkou energie 2014-2021 Pražská energetika, a.s."
   }
 }
