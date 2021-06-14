@@ -48,6 +48,10 @@ body {
 
 .text-secondary {
   color: $color-text-secondary !important;
+}
+
+.text-white {
+  color: $color-text-white !important;
   position: relative;
   z-index: 100;
 }
@@ -64,7 +68,7 @@ body {
 
 /* buttons */
 .btn-primary {
-  background-color: $color-brand-blue !important;
+  background-color: $color-btn-primary !important;
   border-radius: 0.125rem !important;
   padding: 0.625rem 2rem!important;
 }
@@ -72,20 +76,20 @@ body {
 
 /* backgrounds */
 .bg-primary {
-  background-color: $color-brand-blue !important;
+  background-color: $color-bg-primary !important;
 }
 
 .bg-secondary {
-  background-color: $color-light !important;
+  background-color: $color-bg-secondary !important;
 }
 
 .bg-transparent {
-  background: $color-linear-dark;
+  background: $color-bg-transparent;
   display: block;
   position: relative;
   &:after {
     content: "";
-    background: $color-linear-dark;
+    background: $color-bg-transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -182,8 +186,6 @@ ul {
 }
 
 /* end icons */
-
-
 
 /* card */
 .card-transparent {

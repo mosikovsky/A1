@@ -2,17 +2,31 @@
  * Colors
  */
 /* basic colors */
+$color-white: #F4F7FC;
 $color-light: #e8eaf0;
-$color-secondary:#f4f7fc;
+$color-secondary:#BBC1D1;
 $color-border-grey: #8993b0;
-$color-brand-blue: #1c2f67;
+$color-blue: #1c2f67;
 $color-linear-dark: linear-gradient(0deg, #0c23618f, #0c23618f);
 $color-alert: #e40521;
 /* end basic colors */
 
 /* text color */
-$color-text-primary: $color-brand-blue;
+$color-text-primary: $color-blue;
 $color-text-secondary: $color-secondary;
 $color-text-alert: $color-alert;
 $color-text-light: $color-light;
+$color-text-white: $color-white;
 /* end text color */
+
+/* background color */
+$color-bg-primary: $color-blue;
+$color-bg-secondary: $color-secondary;
+$color-bg-transparent: $color-linear-dark;
+/* end background color */
+
+/* buttons color */
+$color-btn-primary: $color-blue;
+$color-btn-secondary: $color-secondary;
+/* end buttons color */
+
