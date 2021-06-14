@@ -1,28 +1,28 @@
 {
-  "nav": {
+  "nav": {​​​​​​​
     "energy": "Electricity",
     "gas": "Gas",
     "services": "Services",
     "needs": "Needs",
     "contacts": "Contacts",
     "loginBtn": "Log in",
-    "language": "CZ"
+    "language": "CZE"
   },
 
   "searchBar": {
     "placeholder": "Write what you are looking for",
     "description": "For example, try billing or downloadable forms ... :)"
-  },
+  }​,
 
   "mainHeading": {
-    "wewillTakeCareOfYour": "Postaráme se o Vaší ",
-    "electricity": "elektřinu",
-    "blueComma": ",",
-    "gas": "plyn",
-    "electromobility": "elektromobilitu",
-    "or": "či ",
-    "airConditioning": "klimatizaci",
-    "blueDot":"."
+    "wewillTakeCareOfYour": "We will take care of your ",
+    "electricity": "electricity",
+    "blueComma": ", ",
+    "gas": "gas ",
+    "electromobility": "electromobility ",
+    "or": "or",
+    "airConditioning": "air conditioning",
+    "blueDot": "."
   },
 
   "mainInterested": "I am interested in",
@@ -63,24 +63,26 @@
   "footer": {
     "menu": {
       "multiElectricity": {
-        "heading": "ELEKTŘINA",
+        "heading": "ELETRICITY",
         "items": {
+          "garant": "Garant",
           "classic": "Classic",
           "ecostream": "PREecostream",
           "productOverview": "Product overview"
         }
       },
       "multiGas": {
-        "heading": "PLYN",
+        "heading": "GAS",
         "items": {
           "gasFixPlus": "PRE gas fix plus",
-          "gasClassic": "Classic",
+          "gasClassic": "PRE gas classic",
           "productOverview": "Product overview"
         }
       },
       "multiServices": {
-        "heading": "SLUŽBY",
+        "heading": "SERVICES",
         "items": {
+          "fve": "FVE",
           "wallBoxes": "Wallboxes",
           "airCond": "Air conditioning",
           "gasBoilers": "Gas boilers",
@@ -88,20 +90,20 @@
         }
       },
       "documents": {
-        "heading": "POTŘEBUJI ZAŘÍDIT",
+        "heading": "NEEDS",
         "items": {
           "documents": "Documents",
-          "goReturn": "You want to go to / return to PR",
+          "goReturn": "You want to go to/return to PRE",
           "invoiceExp": "Invoice explanation",
+          "invoicePay": "How to pay an invoice",
           "recivables": "Settlement of receivables",
           "overpay": "Overpayment from advances",
           "subConnection": "Subscription connection",
-          "invoicePay": "How to pay an invoice",
           "failReport": "Report failure"
         }
       },
       "company": {
-        "heading": "SPOLEČNOST",
+        "heading": "COMPANY",
         "items": {
           "contacts": "Contacts",
           "pressCenter": "Press center",
@@ -109,7 +111,7 @@
           "contactUs": "Contact us",
           "customerCentrum": "Customer centre",
           "contactAddresses": "Contact addresses",
-          "recivablesReminders": "Receivables / reminders",
+          "recivablesReminders": "Receivables/reminders",
           "bankConnection": "Bank connection",
           "career": "Career"
         }
@@ -123,6 +125,34 @@
       "terms": "Terms of use of the website",
       "conditions": "Business conditions"
     },
-    "copyright": "@Vyrobeno s pořádnou dávkou energie 2014-2021 Pražská energetika, a.s."
+    "alt": {
+      "nav": {
+        "logo":{
+        "pre": "logo PRE"
+        }
+      } ,
+      "homepage": {
+        "logo": {
+          "preDistribution": "Logo odkaz PRE distibuce",
+          "preMeasurement": "Logo odkaz PRE měření",
+          "preCustomer": "Logo odkaz PRE zákaznická",
+          "service": "Logo odkaz Pre servisní",
+          "kormak": "Logo odkaz KORMAK",
+          "voltcom": "Logo odkaz VOLTCOM"
+        },
+        "socialLinks": {
+          "facebook": "odkaz na facebookovu stránku PRE",
+          "youtube": "odkaz na youtube stránku PRE",
+          "linkedin": "odkaz na linkedin společnosti PRE"
+        }
+      },
+      "footer": {
+        "logo":{
+          "smallPre": "malé logo PRE",
+          "pre": "logo PRE"
+        }
+      } 
+    },
+    "copyright": "@Made with lot of energy 2014-2021 Pražská energetika,a.s."
   }
 }
