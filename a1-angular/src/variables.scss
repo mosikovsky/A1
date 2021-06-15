@@ -7,7 +7,8 @@ $color-light: #e8eaf0;
 $color-secondary:#BBC1D1;
 $color-border-grey: #8993b0;
 $color-blue: #1c2f67;
-$color-linear-dark: linear-gradient(0deg, #0c23618f, #0c23618f);
+$color-gradient-1: #0c23618f;
+$color-gradient-2: #0c23618f;
 $color-alert: #e40521;
 /* end basic colors */
 
@@ -22,7 +23,6 @@ $color-text-white: $color-white;
 /* background color */
 $color-bg-primary: $color-blue;
 $color-bg-secondary: $color-secondary;
-$color-bg-transparent: $color-linear-dark;
 /* end background color */
 
 /* buttons color */
@@ -30,3 +30,4 @@ $color-btn-primary: $color-blue;
 $color-btn-secondary: $color-secondary;
 /* end buttons color */
 
+    

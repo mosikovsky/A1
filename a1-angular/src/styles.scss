@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "variables";
+@import "mixins";
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 body {
@@ -84,12 +85,12 @@ body {
 }
 
 .bg-transparent {
-  background: $color-bg-transparent;
+  @include gradient ($color-gradient-1, $color-gradient-2);
   display: block;
   position: relative;
   &:after {
     content: "";
-    background: $color-bg-transparent;
+    @include gradient ($color-gradient-1, $color-gradient-2);
     position: absolute;
     top: 0;
     left: 0;
@@ -198,7 +199,7 @@ ul {
 
 /* modal */
 .modal-content {
-  background: $color-linear-dark;
+  background: $color-gradient-1;
 }
 .modal-header {
   border-bottom: none;

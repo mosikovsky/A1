@@ -1,0 +1,3 @@
+@mixin gradient($color-gradient-1, $color-gradient-2) {
+    background-image: repeating-linear-gradient($color-gradient-1, $color-gradient-2);
+  }
