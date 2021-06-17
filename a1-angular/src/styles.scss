@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import "variables";
-@import "mixins";
+@import '_variables.scss';
+@import '_mixins.scss';
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 /* headings */
-.h1,.h2,.h4 {
+.h1, .h2, .h4 {
   font-style: normal;
   font-weight: normal;
 }
@@ -85,12 +85,13 @@ body {
 }
 
 .bg-transparent {
-  @include gradient ($color-gradient-1, $color-gradient-2);
+  background: rgba(12, 35, 97, 0.56);
   display: block;
   position: relative;
+
   &:after {
     content: "";
-    @include gradient ($color-gradient-1, $color-gradient-2);
+    background: rgba(12, 35, 97, 0.56);
     position: absolute;
     top: 0;
     left: 0;
@@ -98,7 +99,8 @@ body {
     bottom: 0;
     z-index: 1;
   }
-  .bg-transparent > * {
+
+  & > * {
     z-index: 10;
   }
 }
@@ -108,19 +110,19 @@ body {
 }
 
 .bg-nature {
-  background-image: url("/assets/images/nature.png");
+  background-image: url('/assets/images/nature.png');
 }
 
 .bg-clima {
-  background-image: url("/assets/images/klima.png");
+  background-image: url('/assets/images/klima.png');
 }
 
 .bg-ecar {
-  background-image: url("/assets/images/ecar.png");
+  background-image: url('/assets/images/ecar.png');
 }
 
 .bg-eshop {
-  background-image: url("/assets/images/eshop.png");
+  background-image: url('/assets/images/eshop.png');
 }
 
 .bg-nature,
@@ -148,23 +150,23 @@ ul {
 
 /* icons */
 .icon-arrow-right {
-  background-image: url("/assets/icons/arrow-right.svg") !important;
+  background-image: url('/assets/icons/arrow-right.svg') !important;
 }
 
 .icon-facebook {
-  background-image: url("/assets/icons/facebook.svg") !important;
+  background-image: url('/assets/icons/facebook.svg') !important;
 }
 
 .icon-youtube {
-  background-image: url("/assets/icons/youtube.svg") !important;
+  background-image: url('/assets/icons/youtube.svg') !important;
 }
 
 .icon-linkedin {
-  background-image: url("/assets/icons/linkedin.svg") !important;
+  background-image: url('/assets/icons/linkedin.svg') !important;
 }
 
 .icon-vertical-line {
-  background-image: url("/assets/icons/vertical-line.svg") !important;
+  background-image: url('/assets/icons/vertical-line.svg') !important;
 }
 .icon-vertical-line,
 .icon-arrow-right{
@@ -173,9 +175,7 @@ ul {
 .icon-facebook,
 .icon-youtube,
 .icon-linkedin {
-    background-position: 3.5rem 1.8125rem !important;
-    background-position: 3.5rem 1.8125rem !important;
-    background-position: 3.5rem 1.8125rem !important;
+  background-position: 3.5rem 1.8125rem !important;
 }
 
 .icon-arrow-right,
@@ -199,7 +199,7 @@ ul {
 
 /* modal */
 .modal-content {
-  background: $color-gradient-1;
+  background: $color-blue-alpha;
 }
 .modal-header {
   border-bottom: none;
@@ -228,7 +228,7 @@ ul {
 @media screen and (min-width: 720px) {
   .title-bg {
     background-repeat: no-repeat !important;
-    background-image: url("/assets/images/main-img.png") !important;
+    background-image: url('/assets/images/main-img.png') !important;
     background-position: right center !important;
     height: 31.25rem;
   }

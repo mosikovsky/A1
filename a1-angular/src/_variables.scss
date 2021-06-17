@@ -4,11 +4,14 @@
 /* basic colors */
 $color-white: #F4F7FC;
 $color-light: #e8eaf0;
-$color-secondary:#BBC1D1;
+$color-secondary:#bbc1d1;
 $color-border-grey: #8993b0;
+
 $color-blue: #1c2f67;
-$color-gradient-1: #0c23618f;
-$color-gradient-2: #0c23618f;
+$color-blue-middle: #0c63e4;
+$color-blue-light: #e7f1ff;
+$color-blue-alpha: rgba(12, 35, 97, 0.56);
+
 $color-alert: #e40521;
 /* end basic colors */
 
@@ -29,5 +32,3 @@ $color-bg-secondary: $color-secondary;
 $color-btn-primary: $color-blue;
 $color-btn-secondary: $color-secondary;
 /* end buttons color */
-
-    

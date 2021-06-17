@@ -1,15 +1,24 @@
+/**
+ * Colors
+ */
+/* basic colors */
+/* end basic colors */
+/* text color */
+/* end text color */
+/* background color */
+/* end background color */
+/* buttons color */
+/* end buttons color */
 /* accordion */
-.accordion .h4 {
-  margin-bottom: 0;
-  color: #fff; }
-
-.accordion-button:focus {
+.accordion .accordion-button:focus {
   background-color: #1c2f67 !important;
   color: #1c2f67 !important; }
-
-.accordion-button:not(.collapsed) {
+.accordion .accordion-button:not(.collapsed) {
   color: #0c63e4;
   background-color: #e7f1ff;
   box-shadow: none !important; }
+.accordion .accordion-button .h4 {
+  margin-bottom: 0;
+  color: #F4F7FC; }
 
 /* end accordion */

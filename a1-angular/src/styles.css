@@ -1,69 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+/**
+ * Colors
+ */
+/* basic colors */
+/* end basic colors */
+/* text color */
+/* end text color */
+/* background color */
+/* end background color */
+/* buttons color */
+/* end buttons color */
 @import url(~bootstrap/dist/css/bootstrap.min.css);
 body {
-  background-color: #f4f7fc;
+  background-color: #e8eaf0 !important;
   font-family: "Helvetica";
-  font-size: 16px; }
+  font-size: 1rem; }
 
-.btn-primary {
-  background-color: #1c2f67 !important;
-  border-radius: 2px !important;
-  padding: 10px 32px !important; }
-
-/* backgrounds */
-.bg-primary {
-  background-color: #1c2f67 !important; }
-
-.bg-secondary {
-  background-color: #e8eaf0 !important; }
-
-.bg-transparent > * {
-  z-index: 10; }
-
-.bg-transparent {
-  background: linear-gradient(0deg, rgba(12, 35, 97, 0.56), rgba(12, 35, 97, 0.56));
-  display: block;
-  position: relative; }
-
-.bg-transparent::after {
-  content: "";
-  background: linear-gradient(0deg, rgba(12, 35, 97, 0.56), rgba(12, 35, 97, 0.56));
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1; }
-
-/* end background */
 /* headings */
-.h1 {
+.h1, .h2, .h4 {
   font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 40px; }
+  font-weight: normal; }
+
+.h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem; }
 
 .h2 {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 2rem; }
 
 .h4 {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: -0.315px;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  letter-spacing: -0.0197rem;
   text-transform: uppercase; }
 
 /* end headings */
+/* fonts */
+.font-weight-bold {
+  font-weight: bold; }
+
+.font-weight-bolder {
+  font-weight: bolder; }
+
+/* end fonts */
 /* text */
 .text-primary {
   color: #1c2f67 !important;
   z-index: 10; }
 
 .text-secondary {
-  color: #f4f7fc !important;
+  color: #bbc1d1 !important; }
+
+.text-white {
+  color: #F4F7FC !important;
   position: relative;
   z-index: 100; }
 
@@ -75,46 +65,39 @@ body {
   opacity: 0.64; }
 
 /* end text */
-/* forms */
-.form-control-xxl {
-  font-size: 2rem; }
+/* buttons */
+.btn-primary {
+  background-color: #1c2f67 !important;
+  border-radius: 0.125rem !important;
+  padding: 0.625rem 2rem !important; }
 
-ul {
-  list-style-type: none; }
+/* end buttons */
+/* backgrounds */
+.bg-primary {
+  background-color: #1c2f67 !important; }
 
-.font-weight-bold {
-  font-weight: bold; }
+.bg-secondary {
+  background-color: #bbc1d1 !important; }
 
-.font-weight-bolder {
-  font-weight: bolder; }
+.bg-transparent {
+  background: rgba(12, 35, 97, 0.56);
+  display: block;
+  position: relative; }
+  .bg-transparent:after {
+    content: "";
+    background: rgba(12, 35, 97, 0.56);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; }
+  .bg-transparent > * {
+    z-index: 10; }
 
-/* ICONS */
-.icon-arrow-right {
-  background-image: url("/assets/icons/arrow-right.svg") !important;
-  background-repeat: no-repeat;
-  background-position: center !important; }
+.title-bg {
+  background-image: none !important; }
 
-.icon-facebook {
-  background-image: url("/assets/icons/facebook.svg") !important;
-  background-repeat: no-repeat;
-  background-position: 56px 29px !important; }
-
-.icon-youtube {
-  background-image: url("/assets/icons/youtube.svg") !important;
-  background-repeat: no-repeat;
-  background-position: 56px 29px !important; }
-
-.icon-linkedin {
-  background-image: url("/assets/icons/linkedin.svg") !important;
-  background: no-repeat;
-  background-position: 56px 29px !important; }
-
-.icon-vertical-line {
-  background-image: url("/assets/icons/vertical-line.svg") !important;
-  background-repeat: no-repeat;
-  background-position: center !important; }
-
-/* IMGS*/
 .bg-nature {
   background-image: url("/assets/images/nature.png"); }
 
@@ -135,19 +118,50 @@ ul {
   background-size: cover;
   background-position: center center; }
 
-/* end IMGS */
-.title-bg {
-  background-image: none !important; }
+/* end background */
+/* forms */
+.form-control-xxl {
+  font-size: 2rem; }
 
-/* CUSTOM CLASS */
-.line {
-  border-top: 1px solid #8993b0;
-  border-bottom: 1px solid #8993b0;
-  padding: 1rem 0; }
+/* end forms */
+/* list */
+ul {
+  list-style-type: none; }
 
-.line-t {
-  border-top: 1px solid #8993b0; }
+/* end list */
+/* icons */
+.icon-arrow-right {
+  background-image: url("/assets/icons/arrow-right.svg") !important; }
 
+.icon-facebook {
+  background-image: url("/assets/icons/facebook.svg") !important; }
+
+.icon-youtube {
+  background-image: url("/assets/icons/youtube.svg") !important; }
+
+.icon-linkedin {
+  background-image: url("/assets/icons/linkedin.svg") !important; }
+
+.icon-vertical-line {
+  background-image: url("/assets/icons/vertical-line.svg") !important; }
+
+.icon-vertical-line,
+.icon-arrow-right {
+  background-position: center !important; }
+
+.icon-facebook,
+.icon-youtube,
+.icon-linkedin {
+  background-position: 3.5rem 1.8125rem !important; }
+
+.icon-arrow-right,
+.icon-facebook,
+.icon-youtube,
+.icon-linkedin,
+.icon-vertical-line {
+  background-repeat: no-repeat; }
+
+/* end icons */
 /* card */
 .card-transparent {
   background: transparent; }
@@ -158,7 +172,7 @@ ul {
 /* end card */
 /* modal */
 .modal-content {
-  background: linear-gradient(0deg, rgba(12, 35, 97, 0.56), rgba(12, 35, 97, 0.56)); }
+  background: rgba(12, 35, 97, 0.56); }
 
 .modal-header {
   border-bottom: none; }
@@ -168,17 +182,33 @@ ul {
   width: 5rem; }
 
 /* end modal */
+/* CUSTOM CLASS */
+.line {
+  border-top: 1px solid #8993b0;
+  border-bottom: 1px solid #8993b0;
+  padding: 1rem 0; }
+
+.line-t {
+  border-top: 1px solid #8993b0; }
+
+/* end CUSTOM CLASS */
+/*  media 720px */
 @media screen and (min-width: 720px) {
   .title-bg {
     background-repeat: no-repeat !important;
     background-image: url("/assets/images/main-img.png") !important;
     background-position: right center !important;
-    height: 500px; } }
+    height: 31.25rem; } }
+/* end media 720px */
+/* media 1280px */
 @media screen and (min-width: 1280px) {
   .h1 {
-    font-size: 64px;
-    line-height: 68px; }
+    font-size: 4rem;
+    line-height: 4.25rem; }
 
   .h2 {
-    font-size: 48px;
-    line-height: 63px; } }
+    font-size: 3rem;
+    line-height: 3.9375rem; } }
+/* end media 1280px */
+/* media 1920px */
+/* end media 1920px */

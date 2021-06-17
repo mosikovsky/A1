@@ -1,12 +1,14 @@
-.navbar {
-  background-color: #bbc1d1 !important;
-  padding: 0;
-}
+@import '../../../_variables.scss';
 
-.nav-link {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  color: #1c2f67;
+.navbar {
+  background-color: $color-secondary !important;
+  padding: 0;
+
+  .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.31rem;
+    color: $color-blue;
+  }
 }
