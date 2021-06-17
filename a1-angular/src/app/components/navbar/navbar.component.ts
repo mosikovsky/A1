@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
     let newLang: string = e.target.innerHTML;
     if (newLang === 'EN') {
       this.localSettings.setLanguage('en');
-    } else if (newLang === 'CZ') {
+    } else if (newLang === 'CZ' || newLang === 'CZE') {
       this.localSettings.setLanguage('cs');
     }
 

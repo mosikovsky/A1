@@ -1,5 +1,5 @@
 {
-  "nav": {​​​​​​​
+  "nav": {
     "energy": "Electricity",
     "gas": "Gas",
     "services": "Services",
@@ -12,7 +12,7 @@
   "searchBar": {
     "placeholder": "Write what you are looking for",
     "description": "For example, try billing or downloadable forms ... :)"
-  }​,
+  },
 
   "mainHeading": {
     "wewillTakeCareOfYour": "We will take care of your ",
@@ -151,7 +151,7 @@
           "smallPre": "malé logo PRE",
           "pre": "logo PRE"
         }
-      } 
+      }
     },
     "copyright": "@Made with lot of energy 2014-2021 Pražská energetika,a.s."
   }
