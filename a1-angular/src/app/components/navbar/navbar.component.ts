@@ -22,6 +22,7 @@ export class NavbarComponent implements OnInit {
     } else if (newLang === 'CZ' || newLang === 'CZE') {
       this.localSettings.setLanguage('cs');
     }
+
     window.location.reload();
   }
 
